@@ -11,25 +11,43 @@
         <h1 class="hidden">Industry Night 2025</h1>
                <div id="sticky-nav-con">
                 <header class="grid-con" id="main-header">
-                    <nav id="main-nav" class="col-span-full">
-                        <h2 class="hidden">Main Navigation</h2>
-                        <button id="button"></button>
-                        <div id="burger-con">
-                            <ul>
-                                <li><a href="#">EVENT</a></li>
-                                <li><a href="#">VIDEO</a></li>
-                                <li><a href="#">FINALISTS</a></li>
-                                <li><a href="#">GALLERY</a></li>
-                                <li><a href="#">TESTIMONIALS</a></li>
-                                <li><a href="#">COURSE</a></li>
-                                <li><a href="#">DEVELOPERS</a></li>
-                                <li><a href="#">PORTFOLIO</a></li>
-                            </ul>
-                        </div>
-                    </nav>
 
-                    <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
-                        <img src="images/fanshawe-logo.png" alt="Couples Resort Logo">
+                      <!---------my code---------->
+                    <div class="hamburger" id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                        
+                        <nav class="mobile-nav" class="col-span-full">
+                            <h2 class="hidden">Main Navigation</h2>
+                    
+                    
+                               <img class="logo-burger" src="images/white-logo.svg">
+                            
+                                <button href="#event">Event</button>
+                                <button href="#video">Video</button>
+                                <button href="#finalists">Finalists</button>
+                                <button href="#gallery">Gallery</button>
+                                <button href="#testimonials">Testimonials</button>
+                                <button href="#course">Course</button>
+                                <button href="#developers">Developers</button>
+                                <button href="#portfolios">Portfolios</button> 
+                    
+                    
+                    
+                                <div class="social-media">
+                                   <img src="images/Facebook.svg">
+                                    <img src="images/Instagram Icon.svg">
+                                    <img src="images/X Icon.svg">
+                                 </div>     
+                            
+                            
+                    </nav>
+                         <!---------my code finishes---------->
+
+                    <div id="logo" class="col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4">
+                        <img src="images/fanshawe-logo.png" alt="Logo">
                     </div>
 
                     <div class="col-span-full">
@@ -192,7 +210,7 @@
             </section>
 
             <section>
-                <div class="grid-con">
+                <div id="portfolios" class="grid-con">
                 <h2 class="col-span-full mobile-heading box">PORTFOLIO</h2>
                 
                 <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 box">
@@ -452,6 +470,6 @@
                 </div>
             </div>
         </footer>
-
+      <script src="js/main.js"></script>
     </body>
 </html>
