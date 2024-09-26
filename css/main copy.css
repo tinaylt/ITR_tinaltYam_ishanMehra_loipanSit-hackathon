@@ -60,7 +60,7 @@ p {
     margin: 30px;
     flex-direction: column;
     cursor: pointer;
-    z-index: 2;
+    z-index: 11; 
   }
   
   .line {
@@ -70,58 +70,58 @@ p {
     background-color: #d12626; 
   }
 
-  .line.active {
+  .line.active{
     background-color: #ffffff; 
   }
     
   .mobile-nav{
-   position: absolute;
+   display: flex;
+   position:absolute;
    flex-direction: column;
    background-color: rgba(216, 58, 58, 1);
-   left: -10px;
-   z-index: 1;
+   height: 360px;
+   width: 500px;
+   padding-top:80px ;
+   padding-bottom: 40px;
+   z-index: 10;
+   right: -500px;
   }
 
   .hide {
-    display: none;
+    visibility: hidden;
   }
 
-  .mobile-nav {
-    width: 500px;
-    height: 400px;
-    padding-top: 50px;
-  }
-
-  .mobile-nav ul li{
-    line-height: 20px;
+  .mobile-nav button{
+    width: 90px;
+    border: none;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    color: white;
+    background-color: transparent;
     font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     cursor: pointer;
-    padding-left: 35px;
-    margin-top: 5px;
   }
 
-  .mobile-nav ul li a {
-    list-style: none;
-    color: #ffffff;
-    font-size: 17px;
-  }
-
-  .white-logo {
-    width: 300px;
-    padding-bottom: 10px;
-}
-
-  .social-media {
-    float: right;
-    width: 180px;
-  }
+  .logo-burger{
+    position: relative;
+    height: 40px;
+    top: -60px;
+    left: -110px;}
   
-  .social-media img {
-    padding-right: 10px;
-    width: 40px;
-    margin-top: -20px;
+  
+  .social-media{
+    position: relative;
+    display:flex;
+    gap: 10px;
+    height: 40px;
+    width: 120px;
+    left:320px;
+    bottom: 7px;
   }
-
  
   /*hamburer menu animation*/
 
@@ -137,10 +137,10 @@ p {
     transform: rotate(-45deg) translate(6px, -10px);
   }
 
-  /* .mobile-nav.translated {
-    transform: translateX(500px);
+  .mobile-nav.translated {
+    transform: translateX(-500px);
     transition: transform 0.4s ease-in-out;
-} */
+}
 
 #logo {
   grid-row-start: 1;
