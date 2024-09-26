@@ -49,12 +49,15 @@ p {
 
 /*------------------mobile size menu--------------*/
 
+#sticky-nav-con {
+  position: absolute;
+}
+
 .hamburger {
     position: relative;
     width: 30px;
     display: flex;
-    left: 390px;
-    top:30px;
+    margin: 30px;
     flex-direction: column;
     cursor: pointer;
     z-index: 11; 
@@ -73,22 +76,22 @@ p {
     
   .mobile-nav{
    display: flex;
-   position:relative;
+   position:absolute;
    flex-direction: column;
    background-color: rgba(216, 58, 58, 1);
    height: 360px;
-   width: 419px;
+   width: 500px;
    padding-top:80px ;
    padding-bottom: 40px;
    z-index: 10;
-   right: -600px;
+   right: -500px;
   }
 
   .mobile-nav button{
     width: 90px;
     border: none;
     margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 40px;
     color: white;
     background-color: transparent;
     font-size: 15px;
@@ -110,9 +113,9 @@ p {
   .social-media{
     position: relative;
     display:flex;
-    gap: 15px;
-    height: 20px;
-    width: 90px;
+    gap: 10px;
+    height: 40px;
+    width: 120px;
     left:320px;
     bottom: 7px;
   }
@@ -131,31 +134,40 @@ p {
     transform: rotate(-45deg) translate(6px, -10px);
   }
 
-
-
   .mobile-nav.translated {
-    transform: translateX(-700px);
+    transform: translateX(-500px);
     transition: transform 0.4s ease-in-out;
 }
-  
-  /* Media Query for Mobile 
-  @media (max-width: 768px) {
-    .mobile-nav {
-      display: flex;
-    }
+
+#logo {
+  grid-row-start: 1;
+}
+
+
+  #hero img{
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
   }
-    */
+
+  #hero #hero-header {
+    grid-column: 2/3;
+    grid-row-start: 2;
+    margin: 0;
+ }
+
+ #hero-header {
+  display: block;
+ }
+
+ /* #hero h3 {
+  font-size: 70px;
+ } */
 
 
-  /* #logo{
-    width: 200px;
-    margin-top: -360px;
-    margin-left: 30px;
-  } */
+
   
-
-  
-
 
 
 
@@ -196,14 +208,9 @@ p {
       display: none;
     }
 
-    /* #logo{
-      
-      width: 250px;
-      margin-top: 0;
-      margin-left: 250px;
-      margin-bottom: 250px;
-      
-    } */
+    #portfolios {
+      overflow: hidden;
+     }
 
 }
 
