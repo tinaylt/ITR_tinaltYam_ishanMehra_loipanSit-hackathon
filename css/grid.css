@@ -19,7 +19,7 @@ body, p, h1, h2, h3, h4, h5 {
 
 
 .box {
-    background: grey;
+    background: rgb(227, 187, 111);
     color: black;
     padding: 20px;
     margin: 5px;
