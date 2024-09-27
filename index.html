@@ -19,11 +19,11 @@
                         <span class="line"></span>
                     </div>
                         
-                        <nav class="mobile-nav hide">
+                        <nav class="mobile-nav hide m-col-span-full l-col-span-full">
                             <h2 class="hidden">Main Navigation</h2>
 
                                 <ul>
-                                    <li class="white-logo"><img src="images/white-logo.svg" alt="white-logo"></li>
+                                    <li id="white-logo"><img src="images/white-logo.svg" alt="white-logo"></li>
                                     <li><a href="x">EVENT</a></li>
                                     <li><a href="x">VIDEO</a></li>
                                     <li><a href="x">FINALISTS</a></li>
@@ -32,7 +32,7 @@
                                     <li><a href="x">COURSE</a></li>
                                     <li><a href="x">DEVELOPERS</a></li>
                                     <li><a href="x">PORTFOLIOS</a></li> 
-                                    <li class="social-media"><img src=images/facebook.svg alt="facebook icon">
+                                    <li id="social-media"><img src=images/facebook.svg alt="facebook icon">
                                         <img src="images/instagram-icon.svg" alt="ig icon">
                                         <img src="images/x-icon.svg" alt="x icon">
                                     </li>
@@ -101,9 +101,23 @@
 
                 <div class="col-span-full m-col-start-7 m-col-end-13 box">
                     <p>Industry Night</p>
-                    <video controls preload="metadata">
-                        <source src="video/industry-night-draft.mp4">
-                    </video>
+
+                    <div id="player-container"class="col-span-full">
+                        <video controls preload="metadata">
+                            <source src="video/industry-night-draft.mp4">
+                        </video>
+
+                        <div class="video-controls hidden" id="video-controls">
+                            <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
+                            <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
+                            <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
+                            <i class="fa fa-volume-up"></i>
+                            <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                            <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
+                        </div>
+
+
+                    </div>
                 </div>
                 
             </section>
@@ -133,7 +147,7 @@
 
             <section>
                 <div class="grid-con">
-                    <h2 class="col-span-full box mobile-heading">TESTIMONIALS</h2>
+                    <h2 class="col-span-full box mobile-size">TESTIMONIALS</h2>
                     <div class="col-span-full m-col-start-3 m-col-end-7 box">
                         Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers.<br>Ensure the sacrifices of these soldiers are remembered and honored.<br><br>Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.
                     </div>
@@ -146,7 +160,7 @@
                         Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers.<br>Ensure the sacrifices of these soldiers are remembered and honored.<br><br>Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.
                     </div>
 
-                    <div class="m-col-start-6 m-col-end-8 desk-heading box">
+                    <div class="m-col-start-6 m-col-end-8 desk-size box">
                         <h3>TESTIMONIALS</h3>
                     </div>
 
@@ -165,7 +179,7 @@
                     <h3>INTERACTIVE MEDIA DESIGN</h3>
                 </div>
                     
-                    <div class="col-span-full m-col-start-7 m-col-end-13 course-img box">
+                    <div class="col-span-full m-col-start-7 m-col-end-13 program-img box">
                         <p>Image</p>
                     </div>
 
