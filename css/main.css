@@ -517,7 +517,7 @@ input[type="range"]:focus::-moz-range-thumb{
   margin: 5px auto;
   padding:30px 20px;
 }
-}
+
 
 .testimonials-block {
   display: none;
