@@ -33,7 +33,8 @@
                                     <li><a href="x">COURSE</a></li>
                                     <li><a href="x">DEVELOPERS</a></li>
                                     <li><a href="x">PORTFOLIOS</a></li> 
-                                    <li id="social-media"><img src=images/facebook.svg alt="facebook icon">
+                                    <li id="social-media">
+                                        <img src=images/facebook.svg alt="facebook icon">
                                         <img src="images/instagram-icon.svg" alt="ig icon">
                                         <img src="images/x-icon.svg" alt="x icon">
                                     </li>
@@ -71,65 +72,92 @@
                 
 
             <section id="event-details" class="grid-con">
-                <div class="event-place col-span-full m-col-start-1 m-col-end-7">
+                <div class="description col-span-full m-col-start-1 m-col-end-7">
                     <h2>EVENT</h2>
                     <p>Join us for a showcase featuring the work of our IDP3 and UED students, alongside Spotlight presentations highlighting the The Brothers in Arms project.</p>
                     
                     <div class="where-when">
                         <h2>WHERE & WHEN</h2>
-                        <object data="images/line-inspector.svg" type="image/svg+xml" alt="line"></object>
+                        <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
 
                         <div class="date">
-                        <i id="icon" class="fa-regular fa-calendar"></i>
+                        <i class="fa-regular fa-calendar icon"></i>
                         <p>Date: 24 April 2025</p>
                         </div>
 
                         <div class="location">
-                        <i id="icon" class="fa-solid fa-location-dot"></i>
-                        <p>Location</p>
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <p>THE GOOD FOUNDATION INC. THEATRE
+                            <br>137 Dundas St, Fanshawe LDA Building, 
+                            <br>London, ON N6A 1E9
+                            </p>
                         </div>
-
                     </div>
                 </div>
+                    <div class="col-start-2 col-end-5 line-end"></div>
 
                     <div class="col-span-full m-col-start-7 m-col-end-13">
-                        <div class="box">
-                            4:00 PM - 5:00 PM
+                        <div class="schedule">
+                            <p>4:00 PM - 5:00 PM<br>
+                                Spotlight Presentations</p>
+                               
+                                <div class="location-s">
+                                    <i class="fa-solid fa-location-dot icon-s"></i>
+                                    <p>The Good Foundation Inc. Theatre</p>
+                                </div>
                         </div>
 
-                        <div class="box">
-                            5:00 PM - 6:00 PM
+                        <div class="schedule">
+                            <p>6:00 PM - 7:00 PM<br>
+                                Student Portfolio Viewing </p>
+                               
+                                <div class="location-s">
+                                    <i class="fa-solid fa-location-dot icon-s"></i>
+                                    <p>Level 4 Labs</p>
+                                </div>
                         </div>
 
-                        <div class="box">
-                            7:00 PM - 8:00PM
+                        <div class="schedule">
+                            <p>7:00 PM - 8:00 PM<br>
+                                Food & Drinks/Mingle & Networking</p>
+                               
+                                <div class="location-s">
+                                    <i class="fa-solid fa-location-dot icon-s"></i>
+                                    <p>The Chef's Table</p>
+                                </div>
                         </div>
                     </div>
 
             </section>
 
-            <section class="grid-con">
-                <div class="col-span-full m-col-start-1 m-col-end-7 box ">
+            <section id="event-video" class="grid-con">
+                <div class="description col-span-full m-col-start-1 m-col-end-7">
                     <h2>EVENT VIDEO</h2>
-                    <h3>Sparkling Night</h3>
+                    <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
+                    <h4>Industry Night Reel</h4>
                     <p>Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. <br>Ensure the sacrifices of these soldiers are remembered and honored.<br><br>Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.</p>
                 </div>
 
-                <div class="col-span-full m-col-start-7 m-col-end-13 box">
-                    <p>Industry Night</p>
+                <div class="col-start-2 col-end-5 line-end"></div>
 
                     <div id="player-container" class="col-span-full">
+
+                        <div class="col-span-full m-col-start-7 m-col-end-13">
+                            <div class="title-label">
+                            <p>Industry Night 2025</p>
+                            </div>
+
                         <video controls preload="metadata">
                             <source src="video/industry-night-draft.mp4">
                         </video>
 
                         <div class="video-controls hidden" id="video-controls">
-                            <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
-                            <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
-                            <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
+                            <button id="play-button"><i class="fa-solid fa-play"></i></button>
+                            <button id="pause-button"><i class="fa-solid fa-pause"></i></button>
+                            <button id="stop-button"><i class="fa-solid fa-stop"></i></button>
                             <i class="fa fa-volume-up"></i>
                             <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-                            <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
+                            <button id="full-screen"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
                         </div>
 
 
@@ -481,14 +509,16 @@
 
 
 
-        <footer>
+        <footer id="sticky-footer">
             <div class="grid-con">
-                <div class="col-span-1 col-span-2 m-col-start-1 m-col-end-9 box">
+                <div class="col-span-1 col-span-2 m-col-start-1 m-col-end-9">
                 <p>Fanshawe College All Right Reserved 2025</p>
                 </div>
             
-                <div class="col-start-3 col-end-5 m-col-start-9 m-col-end-13 box">
-                <p>social media icons</p>
+                <div class="social-media-footer col-end-5 m-col-start-9 m-col-end-13">
+                    <img src=images/facebook.svg alt="facebook icon">
+                    <img src="images/instagram-icon.svg" alt="ig icon">
+                    <img src="images/x-icon.svg" alt="x icon">
                 </div>
             </div>
         </footer>
