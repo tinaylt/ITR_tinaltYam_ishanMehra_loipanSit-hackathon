@@ -16,6 +16,35 @@ const stopButton = document.querySelector('#stop-button');
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
+//Finalist Gallery//
+const finalists = [
+  {
+    label: 'FINALIST - 1',
+    image: 'images/place-holder1.png',
+    developer: 'Ishan',
+    graphicDesigner: "Roy",
+    videoDesigner: "Tina",
+    motionDesigner: "Joe"
+  },
+
+  {
+    label: "FINALIST - 2",
+    image: "images/place-holder2.png",
+    developer: "Mary",
+    graphicDesigner: "Tom",
+    videoDesigner: "June",
+    motionDesigner: "Mark"
+  },
+
+  {
+    label: "FINALIST - 3",
+    image: "images/place-holder3.png",
+    developer: "Charile",
+    graphicDesigner: "Peter",
+    videoDesigner: "Chris",
+    motionDesigner: "Anna"
+  },
+];
 
 
 //mobile menu//
@@ -75,6 +104,23 @@ function hideControls() {
     videoControls.classList.remove('pannel');
   }
 
+//Finalist Gallery//
+
+let currentIndex = 0;
+
+function updateGallery() {
+  const currentFinalist = finalists[currentIndex];
+
+  document.getElementById("current-image").src = currentFinalist.image;
+  document.getElementById("current-label").innerHTML = `<p>${currentFinalist.label}</p>`;
+  document.getElementById("finalist-name1").innerHTML = `Developer - ${currentFinalist.developer}`;
+  document.getElementById("finalist-name2").innerHTML = `Graphic Designer - ${currentFinalist.graphicDesigner}`;
+  document.getElementById("finalist-name3").innerHTML = `Video Designer - ${currentFinalist.videoDesigner}`;
+  document.getElementById("finalist-name4").innerHTML = `Motion Designer - ${currentFinalist.motionDesigner}`;
+}
+
+
+
 //mobile menu//
 hamburger.addEventListener('click', toggleMenu);
 
@@ -90,5 +136,19 @@ videoControls.addEventListener('mouseenter', showControls);
 videoControls.addEventListener('mouseleave', hideControls);
 player.addEventListener('mouseenter', showControls);
 player.addEventListener('mouseleave', hideControls);
+
+//Finalist Gallery//
+
+//next button//
+document.getElementById("next").addEventListener("click", function() {
+  currentIndex = (currentIndex + 1) % finalists.length; 
+  updateGallery();
+});
+
+//previous button//
+document.getElementById("prev").addEventListener("click", function() {
+  currentIndex = (currentIndex - 1 + finalists.length) % finalists.length;
+  updateGallery();
+});
 
 })();
