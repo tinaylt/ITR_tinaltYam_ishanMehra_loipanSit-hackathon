@@ -111,8 +111,8 @@ let currentIndex = 0;
 function updateGallery() {
   const currentFinalist = finalists[currentIndex];
 
-  document.getElementById("current-image").src = currentFinalist.image;
-  document.getElementById("current-label").innerHTML = `<p>${currentFinalist.label}</p>`;
+  document.getElementById("finalist-image").src = currentFinalist.image;
+  document.getElementById("finalist-label").innerHTML = `<p>${currentFinalist.label}</p>`;
   document.getElementById("finalist-name1").innerHTML = `Developer - ${currentFinalist.developer}`;
   document.getElementById("finalist-name2").innerHTML = `Graphic Designer - ${currentFinalist.graphicDesigner}`;
   document.getElementById("finalist-name3").innerHTML = `Video Designer - ${currentFinalist.videoDesigner}`;
