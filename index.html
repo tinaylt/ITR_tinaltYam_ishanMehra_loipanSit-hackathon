@@ -140,9 +140,9 @@
 
                 <div class="col-start-2 col-end-5 line-end"></div>
 
-                    <div id="player-container" class="col-span-full">
+                    <div id="player-container" class="col-span-full m-col-start-7 m-col-end-13">
 
-                        <div class="col-span-full m-col-start-7 m-col-end-13">
+                        <div>
                             <div class="title-label">
                             <p>Industry Night 2025</p>
                             </div>
@@ -166,27 +166,45 @@
                 
             </section>
 
-            <section>
-                <div class="grid-con">
-                    <h2 class="col-span-full box">THE PROJECT FINALISTS</h2>
+            <section id="finalist" class="grid-con">
 
-                    <div class="col-span-full m-col-start-1 m-col-end-6 box">
-                        <h4>Brother in Arms Memorial</h4>
-                        <p>FINALIST - 3</p>
-                        <p>Developer - Ishan</p>
-                        <p>Graphic Designer - Roy</p>
-                        <p>Video Designer - Tina</p>
-                        <p>Motion Designer - Joe</p>
+                    <div class="col-span-full">
+                        <h2>THE PROJECT FINALISTS</h2>
+                        <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
+                        <p class="project-title">Brother in Arms Memorial</p>
                     </div>
-                    
-                    <div class="col-span-full m-col-start-6 m-col-end-13 box">
-                        Finalist-Image
+
+                    <!--Finalist Gallery-->
+                    <div class="finalist-gallery col-span-full m-col-start-6 m-col-end-13">
+                        <div class="title-label" id="current-label"><p>FINALIST - 1</p></div>
+
+                        <div id="gallery">
+                            <div class="gallery-slide">
+                                <img src="images/place-holder1.png" alt="finalist webpage" id="current-image">
+                        </div>
+
+                    <!--Button for gallery-->
+                        <nav class="finalist-nav">
+                            <ul class="gallery-nav">
+                                <li><button id="prev"><i class="fa-solid fa-arrow-left"></i></button></li>
+                                <li><button id="next"><i class="fa-solid fa-arrow-right"></i></button></li>
+                            </ul>
+                        </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="finalist-details col-span-full m-col-start-1 m-col-end-6">
+                        <h4>FINALIST</h4>
+                        <p>Developer - <span id="finalist-name1">Ishan</span></p>
+                        <p>Graphic Designer - <span id="finalist-name2">Roy</span></p>
+                        <p>Video Designer - <span id="finalist-name3">Tina</span></p>
+                        <p>Motion Designer - <span id="finalist-name4">Joe</span></p>
                     </div>
 
                     <div class="col-span-full box">
                         Photo Gallery
                     </div>
-                </div>
             </section>
 
             <section>
