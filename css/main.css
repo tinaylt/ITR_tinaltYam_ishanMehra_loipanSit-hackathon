@@ -456,7 +456,7 @@ input[type="range"]:focus::-moz-range-thumb{
   padding-left: 10px;
 }
 
-#current-label {
+#finalist-label {
   margin-bottom: 0;
 }
 
@@ -511,8 +511,13 @@ input[type="range"]:focus::-moz-range-thumb{
 }
 
 
-
 /*testimonials section*/
+
+#testimonial {
+  margin: 5px auto;
+  padding:30px 20px;
+}
+}
 
 .testimonials-block {
   display: none;
