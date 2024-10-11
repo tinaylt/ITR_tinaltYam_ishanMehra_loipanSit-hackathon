@@ -113,10 +113,10 @@ function updateGallery() {
 
   document.getElementById("finalist-image").src = currentFinalist.image;
   document.getElementById("finalist-label").innerHTML = `<p>${currentFinalist.label}</p>`;
-  document.getElementById("finalist-name1").innerHTML = `Developer - ${currentFinalist.developer}`;
-  document.getElementById("finalist-name2").innerHTML = `Graphic Designer - ${currentFinalist.graphicDesigner}`;
-  document.getElementById("finalist-name3").innerHTML = `Video Designer - ${currentFinalist.videoDesigner}`;
-  document.getElementById("finalist-name4").innerHTML = `Motion Designer - ${currentFinalist.motionDesigner}`;
+  document.getElementById("finalist-name1").innerHTML = `${currentFinalist.developer}`;
+  document.getElementById("finalist-name2").innerHTML = `${currentFinalist.graphicDesigner}`;
+  document.getElementById("finalist-name3").innerHTML = `${currentFinalist.videoDesigner}`;
+  document.getElementById("finalist-name4").innerHTML = `${currentFinalist.motionDesigner}`;
 }
 
 
