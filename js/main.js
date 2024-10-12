@@ -50,22 +50,132 @@ const developers = [
   {
    devName: "Roy",
    devImage: "images/dev1.png",
-   description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored.&nbsp;Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+   description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored. &nbsp; Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
   },
 
   {
     devName: "Tina",
     devImage: "images/dev3.png",
-    description: "Hi, I'm Tina! Originally from Hong Kong, I graduated from Fanshawe College with a focus on Interactive Media. I have a passion for both design and coding, and I've worked on various video and graphic design projects. &nbsp; Outside of work, I love exploring new places and learning something new whenever I can. It's exciting to bring creativity and technical skills together, and I'm always eager to take on new challenges"
+    description: "I graduated from Fanshawe College with a focus on Interactive Media. I have a passion for both design and coding, and I've worked on various video and graphic design projects. &nbsp; Outside of work, I love exploring new places and learning something new whenever I can. It's exciting to bring creativity and technical skills together, and I'm always eager to take on new challenges"
    },
  
    {
     devName: "Ishan",
     devImage: "images/dev2.png",
-    description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored.&nbsp;Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+    description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored. &nbsp; Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
    },
 ];
 
+//Portfolio//
+
+const students = [
+  {
+    lastName: "Rodriguez-Ramos",
+    firstName: "Diego",
+  },
+
+  {
+    lastName: "Cooper",
+    firstName: "Kayla"
+  },
+
+  {
+    lastName: "Lozon",
+    firstName: "Ramona"
+  },
+
+  {
+    lastName: "Chen",
+    firstName: "Qingdong"
+  },
+
+  {
+    lastName: "Khan",
+    firstName: "Taylor"
+  },
+
+  {
+    lastName: "Pelacek-Boutilier",
+    firstName: "Cassidy"
+  },
+
+  {
+    lastName: "Bilyea",
+    firstName: "Isaac"
+  },
+  
+  {
+    lastName: "Carriere",
+    firstName: "Ezra"
+  },
+
+  {
+    lastName: "Salwan",
+    firstName: "Shauraya"
+  },
+
+  {
+    lastName: "Reji Vazhavilayil",
+    firstName: "Rebin"
+  },
+
+  {
+    lastName: "Saddul",
+    firstName: "Divij"
+  },
+
+  {
+    lastName: "Park",
+    firstName: "Kyuri"
+  },
+
+  {
+    lastName: "Meijer",
+    firstName: "Nikolai"
+  },
+
+  {
+    lastName: "Hanbury",
+    firstName: "Xaviere"
+  },
+
+  {
+    lastName: "Buck",
+    firstName: "Amari"
+  },
+
+  {
+    lastName: "Sivaskaran",
+    firstName: "Thaseekaran"
+  },
+
+  {
+    lastName: "Parmar",
+    firstName: "Meet Amrutbhai"
+  },
+
+  {
+    lastName: "Reyes",
+    firstName: "Justin Rian"
+  },
+
+  {
+    lastName: "Yantizhanov",
+    firstName: "Alisher"
+  },
+
+  {
+    lastName: "Thakur",
+    firstName: "Parvesh"
+  },
+
+  {
+    lastName: "Damen",
+    firstName: "Meghan"
+  },
+]
+
+const studentBoxes = document.querySelectorAll('.student-box');
 
 
 //Funtion//
@@ -151,13 +261,22 @@ function updateDevGallery() {
   document.getElementById("dev-slide").src = currentDeveloper.devImage;
   document.getElementById("dev-label").innerHTML = `<p>${currentDeveloper.devName}</p>`;
   document.getElementById("dev-desciption").innerHTML = `${currentDeveloper.description}`;
-
 }
 
+//Portfolio//
 
+studentBoxes.forEach(box => {
+  // Get the student index from the data-student attribute
+  const studentIndex = box.dataset.student;
 
+  // Access the corresponding student from the students array
+  const student = students[studentIndex];
 
-
+  // Populate the student-box with the student's name and email
+  box.innerHTML = `
+    <h4>${student.firstName} ${student.lastName}</h4>
+    <p>${student.firstName + student.lastName}.ca</p>`;
+});
 
 
 
