@@ -65,8 +65,8 @@ p {
 .line {
   width: 100%;
   margin-bottom: 6px;
-  height: 2.5px;
-  background-color: #d12626; 
+  height: 3.5px;
+  background-color: black; 
 }
 
 .line.active {
@@ -125,7 +125,7 @@ p {
 /*menu animation*/
 
 .hamburger.active .line:nth-child(1) {
-  transform: rotate(45deg) translate(3px, 6px);
+  transform: rotate(45deg) translate(3px, 7px);
 }
   
 .hamburger.active .line:nth-child(2) {
@@ -133,7 +133,7 @@ p {
 }
   
 .hamburger.active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -10px);
+  transform: rotate(-45deg) translate(7px, -10px);
 }
 
 
@@ -216,8 +216,9 @@ p {
 
 
 #event-details {
-  background-image: url(../images/event-details-bg.png);
-  background-position: cover;
+  background-image: url(../images/event-detail-bg.jpg);
+  background-size: cover;
+  background-position: top 90px;
   background-repeat: no-repeat;
   /*Basic margin size for each section*/
   margin: 5px auto;
@@ -646,11 +647,31 @@ display: none;
 
 #portfolios {
   margin: 5px auto;
-  padding:30px 20px;
+  padding:30px 20px 0px 20px;
+  margin-bottom: -20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
 }
 
+.student-box {
+  border-bottom: 3px solid #CE3B32;
+  margin-bottom: 10px;
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.student-box h4 {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+.student-box p {
+  padding-bottom: 10px;
+  font-size: 12px;
+}
 
 
 /*Footer*/
@@ -659,8 +680,7 @@ display: none;
   padding-bottom: 30px;
   padding-top: 60px;
   background-color: black;
-  background-image: linear-gradient(0deg, #000000, #ebebeb);
-
+  background-image: linear-gradient(0deg, #000000, #CBC8C8);
 }
 
 #sticky-footer p {
