@@ -46,6 +46,13 @@ const finalists = [
   },
 ];
 
+//Photo Gallery Mobile//
+
+const mobImage1 = document.getElementById('mob-img1');
+const mobImage2 = document.getElementById('mob-img2');
+const mobGalleryItems = document.querySelectorAll('#mobile-photos li');
+
+//Developers arrey//
 const developers = [
   {
    devName: "Roy",
@@ -65,6 +72,7 @@ const developers = [
     description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored. &nbsp; Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
    },
 ];
+
 
 //Portfolio//
 
@@ -115,7 +123,7 @@ const students = [
   },
 
   {
-    lastName: "Reji Vazhavilayil",
+    lastName: "Reji-Vazhavilayil",
     firstName: "Rebin"
   },
 
@@ -151,12 +159,12 @@ const students = [
 
   {
     lastName: "Parmar",
-    firstName: "Meet Amrutbhai"
+    firstName: "Meet-Amrutbhai"
   },
 
   {
     lastName: "Reyes",
-    firstName: "Justin Rian"
+    firstName: "Justin-Rian"
   },
 
   {
@@ -173,9 +181,144 @@ const students = [
     lastName: "Damen",
     firstName: "Meghan"
   },
-]
 
+  {
+    lastName: "Zhang",
+    firstName: "Bozhi"
+  },
+
+  {
+    lastName: "Chu",
+    firstName: "Qiao-Yi"
+  },
+
+  {
+    lastName: "Maxwell",
+    firstName: "Sashoye"
+  },
+
+  {
+    lastName: "Bondarchuk",
+    firstName: "Dina"
+  },
+
+  {
+    lastName: "Okutepa",
+    firstName: "Wisdom-Utenwojo"
+  },
+
+  {
+    lastName: "Macapagal",
+    firstName: "Bernardo-Jr."
+  },
+
+  {
+    lastName: "Celis",
+    firstName: "Ezekiel-John"
+  },
+
+  {
+    lastName: "Macadams",
+    firstName: "Katrina"
+  },
+
+  {
+    lastName: "El Maniary",
+    firstName: "Ali"
+  },
+
+  {
+    lastName: "Yam",
+    firstName: "LokTingTina"
+  },
+
+  {
+    lastName: "Yam",
+    firstName: "LokTingTina"
+  },
+
+  {
+    lastName: "Nguyen",
+    firstName: "Thi-Thanh-Thuong"
+  },
+
+  {
+    lastName: "Quelali-Evangelista",
+    firstName: "Jenifer"
+  },
+
+  {
+    lastName: "Nobre-Do-Nascimento",
+    firstName: "Rodrigo"
+  },
+
+  {
+    lastName: "Gabbassova",
+    firstName: "Milana"
+  },
+
+  {
+    lastName: "Cardenas-Ramos",
+    firstName: "Izel-Esteban"
+  },
+
+  {
+    lastName: "Flores",
+    firstName: "Timothy-Bryle"
+  },
+
+  {
+    lastName: "Sit",
+    firstName: "Loi-Pan"
+  },
+
+  {
+    lastName: "Polchai",
+    firstName: "Napas"
+  },
+
+  {
+    lastName: "Singh",
+    firstName: "Akamjot"
+  },
+
+  {
+    lastName: "Opadele",
+    firstName: "Emmanuel"
+  },
+
+  {
+    lastName: "Sojan",
+    firstName: "Shon"
+  },
+
+  {
+    lastName: "Ishan",
+    firstName: "Mehra"
+  },
+
+  {
+    lastName: "Biju-Varghese",
+    firstName: "Shiyon"
+  },
+
+  {
+    lastName: "Jashan",
+    firstName: "Kumar"
+  },
+
+  {
+    lastName: "Dhaliwal",
+    firstName: "Meetinder-Singh"
+  },
+
+  {
+    lastName: "Harnoorpreet",
+    firstName: "Kaur"
+  },
+]
 const studentBoxes = document.querySelectorAll('.student-box');
+
 
 
 //Funtion//
@@ -251,6 +394,12 @@ function updateGallery() {
   document.getElementById("finalist-name4").innerHTML = `${currentFinalist.motionDesigner}`;
 }
 
+//Photo Gallery Mobile Size//
+
+
+
+
+
 //Developer Gallery
 
 let currentDevIndex = 0;
@@ -312,6 +461,19 @@ document.getElementById("prev").addEventListener("click", function() {
   currentIndex = (currentIndex - 1 + finalists.length) % finalists.length;
   updateGallery();
 });
+
+//Photo Gallery Mobile//
+
+mobGalleryItems.forEach(item => {
+  item.addEventListener('click', function() {
+      const image1 = this.getAttribute('data-gallery1');
+      const image2 = this.getAttribute('data-gallery2');
+      
+      mobImage1.src = image1;
+      mobImage2.src = image2;
+  });
+});
+
 
 //Developer button//
 
