@@ -19,9 +19,9 @@ const fullScreen = document.querySelector("#full-screen");
 //Finalist Gallery//
 const finalists = [
   {
-    label: 'FINALIST - 1',
-    image: 'images/place-holder1.png',
-    developer: 'Ishan',
+    label: "FINALIST - 1",
+    winner: "images/place-holder1.png",
+    webDeveloper: "Ishan",
     graphicDesigner: "Roy",
     videoDesigner: "Tina",
     motionDesigner: "Joe"
@@ -29,8 +29,8 @@ const finalists = [
 
   {
     label: "FINALIST - 2",
-    image: "images/place-holder2.png",
-    developer: "Mary",
+    winner: "images/place-holder2.png",
+    webDeveloper: "Mary",
     graphicDesigner: "Tom",
     videoDesigner: "June",
     motionDesigner: "Mark"
@@ -38,15 +38,37 @@ const finalists = [
 
   {
     label: "FINALIST - 3",
-    image: "images/place-holder3.png",
-    developer: "Charile",
+    winner: "images/place-holder3.png",
+    webDeveloper: "Charile",
     graphicDesigner: "Peter",
     videoDesigner: "Chris",
     motionDesigner: "Anna"
   },
 ];
 
+const developers = [
+  {
+   devName: "Roy",
+   devImage: "images/dev1.png",
+   description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored.&nbsp;Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+  },
 
+  {
+    devName: "Tina",
+    devImage: "images/dev3.png",
+    description: "Hi, I'm Tina! Originally from Hong Kong, I graduated from Fanshawe College with a focus on Interactive Media. I have a passion for both design and coding, and I've worked on various video and graphic design projects. &nbsp; Outside of work, I love exploring new places and learning something new whenever I can. It's exciting to bring creativity and technical skills together, and I'm always eager to take on new challenges"
+   },
+ 
+   {
+    devName: "Ishan",
+    devImage: "images/dev2.png",
+    description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored.&nbsp;Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+   },
+];
+
+
+
+//Funtion//
 //mobile menu//
 function toggleMenu() {
     const openMenu = hamburger.classList.toggle('active');
@@ -111,16 +133,37 @@ let currentIndex = 0;
 function updateGallery() {
   const currentFinalist = finalists[currentIndex];
 
-  document.getElementById("finalist-image").src = currentFinalist.image;
+  document.getElementById("finalist-site").src = currentFinalist.winner;
   document.getElementById("finalist-label").innerHTML = `<p>${currentFinalist.label}</p>`;
-  document.getElementById("finalist-name1").innerHTML = `${currentFinalist.developer}`;
+  document.getElementById("finalist-name1").innerHTML = `${currentFinalist.webDeveloper}`;
   document.getElementById("finalist-name2").innerHTML = `${currentFinalist.graphicDesigner}`;
   document.getElementById("finalist-name3").innerHTML = `${currentFinalist.videoDesigner}`;
   document.getElementById("finalist-name4").innerHTML = `${currentFinalist.motionDesigner}`;
 }
 
+//Developer Gallery
+
+let currentDevIndex = 0;
+
+function updateDevGallery() {
+  const currentDeveloper = developers[currentDevIndex];
+
+  document.getElementById("dev-slide").src = currentDeveloper.devImage;
+  document.getElementById("dev-label").innerHTML = `<p>${currentDeveloper.devName}</p>`;
+  document.getElementById("dev-desciption").innerHTML = `${currentDeveloper.description}`;
+
+}
 
 
+
+
+
+
+
+
+
+
+//Event handler//
 //mobile menu//
 hamburger.addEventListener('click', toggleMenu);
 
@@ -149,6 +192,19 @@ document.getElementById("next").addEventListener("click", function() {
 document.getElementById("prev").addEventListener("click", function() {
   currentIndex = (currentIndex - 1 + finalists.length) % finalists.length;
   updateGallery();
+});
+
+//Developer button//
+
+document.getElementById("dev-next").addEventListener("click", function() {
+  currentDevIndex = (currentDevIndex + 1) % developers.length; 
+  updateDevGallery();
+});
+
+//previous button//
+document.getElementById("dev-prev").addEventListener("click", function() {
+  currentDevIndex = (currentDevIndex - 1 + developers.length) % developers.length;
+  updateDevGallery();
 });
 
 })();
