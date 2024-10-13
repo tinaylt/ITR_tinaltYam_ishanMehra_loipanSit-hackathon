@@ -515,7 +515,7 @@ input[type="range"]:focus::-moz-range-thumb{
 }
 
 .finalist-details {
-  margin: 20px 20px;
+  margin: 30px 20px;
 }
 
 .finalist-details h4 {
@@ -525,10 +525,16 @@ input[type="range"]:focus::-moz-range-thumb{
 
 /*Photo Gallery*/
 
+#gallery-label {
+  /* padding-bottom: 10px; */
+  margin-bottom: 0;
+}
+
 #photo-gallery {
   justify-content: center;
   align-self: center;
   width: 420px;
+  padding-top: 10px;
 }
 
 #photo-gallery img {
