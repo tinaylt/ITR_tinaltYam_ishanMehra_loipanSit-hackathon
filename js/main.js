@@ -53,6 +53,18 @@ const mobImage1 = document.getElementById('mob-img1');
 const mobImage2 = document.getElementById('mob-img2');
 const mobGalleryItems = document.querySelectorAll('#mobile-photos li');
 
+//Photo Gallery Tablet//
+
+const tabImage1 = document.getElementById('tablet-img1');
+const tabImage2 = document.getElementById('tablet-img2');
+const tabImage3 = document.getElementById('tablet-img3');
+const tabImage4 = document.getElementById('tablet-img4');
+const tabImage5 = document.getElementById('tablet-img5');
+const tabImage6 = document.getElementById('tablet-img6');
+const tabGalleryItems = document.querySelectorAll('#tablet-photos li');
+
+
+
 //Developers arrey//
 const developers = [
   {
@@ -331,12 +343,9 @@ function toggleMenu() {
 }
 
 //video player//
-// if JS is loaded then, remove default video controls and show custom controls
 player.controls = false;
 videoControls.classList.remove('hidden');
 
-
-// Basic Video controls, similar to what we have done with audio
 function playVideo() {
     player.play();
 }
@@ -354,25 +363,18 @@ function changeVolume() {
     player.volume = volumeSlider.value;
 }
 
-// toggleFullScreen toggles the full screen state of the video
-// If the browser is currently in fullscreen mode,
-// then it should exit and vice versa.
 function toggleFullScreen() {
     if (document.fullscreenElement) {
       document.exitFullscreen();
     } else if (document.webkitFullscreenElement) {
-      // Need this to support Safari
       document.webkitExitFullscreen();
     } else if (playerCon.webkitRequestFullscreen) {
-      // Need this to support Safari
         playerCon.webkitRequestFullscreen();
     } else {
         playerCon.requestFullscreen();
     }
 }
 
-// hideControls hides the video controls when not in use
-// if the video is paused, the controls must remain visible
 function hideControls() {
     if (player.paused) {
       return;
@@ -384,6 +386,7 @@ function hideControls() {
   function showControls() {
     videoControls.classList.remove('hide');
   }
+
 //Finalist Gallery//
 
 let currentIndex = 0;
@@ -398,11 +401,6 @@ function updateGallery() {
   document.getElementById("finalist-name3").innerHTML = `${currentFinalist.videoDesigner}`;
   document.getElementById("finalist-name4").innerHTML = `${currentFinalist.motionDesigner}`;
 }
-
-//Photo Gallery Mobile Size//
-
-
-
 
 
 //Developer Gallery
@@ -429,10 +427,8 @@ studentBoxes.forEach(box => {
   // Populate the student-box with the student's name and email
   box.innerHTML = `
     <h4>${student.firstName} ${student.lastName}</h4>
-    <p>${student.firstName + student.lastName}.ca</p>`;
+    <p>${student.firstName}.ca</p>`;
 });
-
-
 
 
 
@@ -476,6 +472,26 @@ mobGalleryItems.forEach(item => {
       
       mobImage1.src = image1;
       mobImage2.src = image2;
+  });
+});
+
+//Tablet Gallery//
+
+tabGalleryItems.forEach(item => {
+  item.addEventListener('click', function() {
+      const tImage1 = this.getAttribute('data-tablet-gallery1');
+      const tImage2 = this.getAttribute('data-tablet-gallery2');
+      const tImage3 = this.getAttribute('data-tablet-gallery3');
+      const tImage4 = this.getAttribute('data-tablet-gallery4');
+      const tImage5 = this.getAttribute('data-tablet-gallery5');
+      const tImage6 = this.getAttribute('data-tablet-gallery6');
+      
+      tabImage1.src = tImage1;
+      tabImage2.src = tImage2;
+      tabImage3.src = tImage3;
+      tabImage4.src = tImage4;
+      tabImage5.src = tImage5;
+      tabImage6.src = tImage6;
   });
 });
 

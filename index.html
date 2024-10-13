@@ -27,7 +27,7 @@
                                     <li id="white-logo"><img src="images/white-logo.svg" alt="white-logo"></li>
                                     <li><a href="#event-details"><div class="circle"></div><p>EVENT</p></a></li>
                                     <li><a href="#event-video"><div class="circle"></div><p>VIDEO</p></a></li>
-                                    <li><a href="#finalist"><div class="circle"></div><p>FINALISTS</p></a></li>
+                                    <li><a href="#finalist"><div class="circle"></div><p id="fina">FINALISTS</p></a></li>
                                     <li><a href="#photo-gallery"><div class="circle"></div><p>GALLERY</p></a></li>
                                     <li><a href="#testimonial"><div class="circle"></div><p id="testi">TESTIMONIALS</p></a></li>
                                     <li><a href="#program"><div class="circle"></div><p>COURSE</p></a></li>
@@ -143,7 +143,7 @@
 
             <section id="event-video">
                 <div class="grid-con">
-                <div class="description col-span-full m-col-start-1 m-col-end-7">
+                <div class="description col-span-full m-col-start-1 m-col-end-6">
                     <h2>EVENT VIDEO</h2>
                     <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
                     <h4>Industry Night Reel</h4>
@@ -155,7 +155,7 @@
 
 
 
-                    <div class="video-container col-span-full m-col-start-7 m-col-end-13">
+                    <div class="video-container col-span-full m-col-start-6 m-col-end-13">
 
                         <div>
                             <div class="title-label">
@@ -187,7 +187,7 @@
 
                     <div class="grid-con">
                         <div class="col-span-full m-col-span-full">
-                        <h2>THE PROJECT FINALISTS</h2>
+                        <h2 c>THE PROJECT FINALISTS</h2>
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
                         <p class="project-title">Brother in Arms Memorial</p>
                         </div>
@@ -213,6 +213,8 @@
 
                         </div>
 
+    
+
                     <div class="finalist-details col-span-full m-col-start-1 m-col-end-6">
                         <h4>FINALIST</h4>
                         <p>Developer - <span id="finalist-name1">Ishan</span></p>
@@ -230,8 +232,12 @@
                             <img id="mob-img2" src="images/mobile-gallery2.jpg" alt="industry night photo">
                             <nav>
                                 <ul id="mobile-photos">
-                                    <li data-gallery1="images/mobile-gallery1.jpg" data-gallery2="images/mobile-gallery2.jpg"><button></button></li>
-                                    <li data-gallery1="images/mobile-gallery3.jpg" data-gallery2="images/mobile-gallery4.jpg"><button></button></li>
+                                    <li data-gallery1="images/mobile-gallery1.jpg" 
+                                    data-gallery2="images/mobile-gallery2.jpg"><button></button>
+                                    </li>
+                                    <li data-gallery1="images/mobile-gallery3.jpg" 
+                                    data-gallery2="images/mobile-gallery4.jpg"><button></button>
+                                    </li>
                                     <li data-gallery1="images/mobile-gallery5.jpg" data-gallery2="images/mobile-gallery6.jpg"><button></button></li>
                                     <li data-gallery1="images/mobile-gallery7.jpg" data-gallery2="images/mobile-gallery8.jpg"><button></button></li>
                                     <li data-gallery1="images/mobile-gallery9.jpg" data-gallery2="images/mobile-gallery10.jpg"><button></button></li>
@@ -241,20 +247,36 @@
                         </div>
 
                         <div id="tablet-gallery" class="desk-size">
-                            <!-- <div class="tablet-label"><p>GALLERIES</p></div> -->
-                            <div id="tablet-images">
-                            <img src="images/tablet-gallery1.jpg" alt="industry night photo">
-                            <img src="images/tablet-gallery2.jpg" alt="industry night photo">
-                            <img src="images/tablet-gallery3.jpg" alt="industry night photo">
-                            <img src="images/tablet-gallery4.jpg" alt="industry night photo">
-                            </div>
+                            <img id="tablet-img1" src="images/tablet-gallery1.jpg" alt="industry night photo">
+                            <img id="tablet-img2" src="images/tablet-gallery2.jpg" alt="industry night photo">
+                            <img id="tablet-img3" src="images/tablet-gallery3.jpg" alt="industry night photo">
+                            <img id="tablet-img4" src="images/tablet-gallery4.jpg" alt="industry night photo">
+                            <img id="tablet-img5" src="images/tablet-gallery5.jpg" alt="industry night photo">
+                            <img id="tablet-img6" src="images/tablet-gallery6.jpg" alt="industry night photo">
+                            <nav>
+                                <ul id="tablet-photos">
+                                    <li data-tablet-gallery1="images/tablet-gallery1.jpg"
+                                    data-tablet-gallery2 ="images/tablet-gallery2.jpg" 
+                                    data-tablet-gallery3="images/tablet-gallery3.jpg" 
+                                    data-tablet-gallery4="images/tablet-gallery4.jpg" 
+                                    data-tablet-gallery5="images/tablet-gallery5.jpg" 
+                                    data-tablet-gallery6="images/tablet-gallery6.jpg">
+                                    <button id="t-gallery-but-left"></button>
+                                    </li>
+
+                                    <li data-tablet-gallery1="images/tablet-gallery7.jpg" 
+                                    data-tablet-gallery2="images/tablet-gallery8.jpg" 
+                                    data-tablet-gallery3="images/tablet-gallery9.jpg" 
+                                    data-tablet-gallery4="images/tablet-gallery10.jpg" 
+                                    data-tablet-gallery5="images/tablet-gallery11.jpg" 
+                                    data-tablet-gallery6="images/tablet-gallery12.jpg">
+                                    <button id="t-gallery-but-right"></button>
+                                    </li>
+
+                                </ul>
+                            </nav>
                         </div>
 
-                        <div class="tablet-but">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </div>
 
 
                     </section>
@@ -266,7 +288,7 @@
                 <div class="grid-con">
                     <h2 class="col-span-full">TESTIMONIALS</h2>
                     
-                    <div class="col-span-full m-col-start-3 m-col-end-7">
+                    <div class="col-span-full m-col-start-1 m-col-end-7">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
                         
                         <h3>Roy Sit</h3>
@@ -276,7 +298,7 @@
                     </div>
 
                     
-                    <div class="col-span-full m-col-start-7 m-col-end-11">
+                    <div class="col-span-full m-col-start-7 m-col-end-13">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
                         
                         <h3>Ishan</h3>
@@ -286,7 +308,7 @@
                     </div>
 
 
-                    <div class="col-span-full m-col-start-2 m-col-end-6">
+                    <div class="col-span-full m-col-start-1 m-col-end-7">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
 
                         <h3>Tina</h3>
@@ -296,11 +318,11 @@
                     </div>
 
 
-                    <!-- <div class="m-col-start-6 m-col-end-8 desk-size">
+                    <!-- <div class="m-col-start-6 m-col-end-8 desk-size test-heading">
                         <h3>TESTIMONIALS</h3>
                     </div> -->
 
-                    <div class="col-span-full m-col-start-8 m-col-end-12 desk-size">
+                    <div class="col-span-full m-col-start-7 m-col-end-13 desk-size">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
 
                         <h3>Ishan</h3>
@@ -309,14 +331,14 @@
                         <div class="line-end"></div>
                     </div>
 
-                    <div class="col-span-full m-col-start-5 m-col-end-9 desk-size">
+                    <!-- <div class="col-span-full m-col-start-4 m-col-end-11 desk-size">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
 
                         <h3>Ishan</h3>
                         <p>Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers.<br>Ensure the sacrifices of these soldiers are remembered and honored.<br><br>Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.</p>
 
                         <div class="line-end"></div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -332,7 +354,7 @@
                     </div>
 
 
-                    <div class="col-span-full m-col-start-1 m-col-end-7">
+                    <div class="col-span-full m-col-start-1 m-col-end-7 program-des">
                         <div>
                         <p>
                         Learn about our program and how it prepares students for the industry.<br><br>Unlock Your Digital Creativity Future with Us! Explore a world of digital design, development, and innovation in our two-year Interactive Media Design program at Fanshawe College.<br><br>Why Choose Us? Gain a comprehensive skill-set in web design, coding, animation, and more. Access cutting-edge facilities and industry-standard software. Open doors to exciting career opportunities in various fields. Stay ahead with emerging technologies. industry-relevant tools!
@@ -351,12 +373,12 @@
             <section id="developer">
                 <div class="grid-con">
                 
-                <div class="col-span-full m-col-start-1 m-col-end-7">
+                <div class="col-span-full m-col-start-1 m-col-end-7 mobile-size">
                 <h2>BEHIND THE BUILD</h2>
                 <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
                 </div>
 
-                <div class="dev-details col-span-full m-col-start-7 m-col-end-13">
+                <div class="dev-details col-span-full m-col-start-8 m-col-end-13">
                     <div class="title-label" id="dev-label"><p>Roy</p></div>
 
                     <div id="dev-gallery">
@@ -374,7 +396,12 @@
                     </div>
                 </div>
 
-                <div class="col-span-full m-col-start-1 m-col-end-7">
+                <div class="dev-text col-span-full m-col-start-1 m-col-end-7">
+                <div>
+                    <h2>BEHIND THE BUILD</h2>
+                    <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
+                    </div>
+
                 <p id="dev-desciption">Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers.
                 Ensure the sacrifices of these soldiers are remembered and honored. Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.</p>
 
@@ -388,148 +415,148 @@
                 <div class="grid-con">
                 <h2 class="col-span-full mobile-heading">PORTFOLIO</h2>
                 
-                <div data-student="0" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="0" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="1" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="1" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="2" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="2" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="3" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="3" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="4" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="4" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="5" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="5" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="6" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="6" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="7" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="7" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="8" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="8" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="9" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="9" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="10" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="10" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="11" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="11" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
                 
-                <div data-student="12" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="12" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="13" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="13" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="14" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="14" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="15" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="15" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="16" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="16" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="17" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="17" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="18" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="18" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="19" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="19" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="20" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="20" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="21" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="21" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="22" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="22" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="23" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="23" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="24" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="24" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="25" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="25" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="26" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="26" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="27" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="27" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="28" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="28" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="29" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="29" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="30" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="30" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="31" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="31" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="32" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="32" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="33" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="33" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="34" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="34" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="35" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="35" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="36" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="36" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="37" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="37" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="38" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="38" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="39" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="39" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="40" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="40" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="41" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="41" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="42" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+                <div data-student="42" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="43" class="student-box col-start-3 col-end-5 m-col-start-3 m-col-end-5">
+                <div data-student="43" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
 
-                <div data-student="44" class="student-box col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <div data-student="44" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
                 </div>
 
-                <div data-student="45" class="student-box col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <div data-student="45" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
                 </div>
 
-                <div data-student="46" class="student-box col-start-1 col-end-3 m-col-start-9 m-col-end-11">
+                <div data-student="46" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
                 </div>
 
-                <div data-student="47" class="student-box col-start-3 col-end-5 m-col-start-11 m-col-end-13">
+                <div data-student="47" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
                 </div>
                 
                 </div>
@@ -541,11 +568,11 @@
 
         <footer id="sticky-footer">
             <div class="grid-con">
-                <div class="col-span-1 col-span-2 m-col-start-1 m-col-end-9">
+                <div class="col-span-1 col-span-2 m-col-start-1 m-col-end-11">
                 <p>Fanshawe College All Right Reserved 2025</p>
                 </div>
             
-                <div class="social-media-footer col-end-5 m-col-start-9 m-col-end-13">
+                <div class="social-media-footer col-end-5 m-col-start-11 m-col-end-13">
                     <img src=images/facebook.svg alt="facebook icon">
                     <img src="images/instagram-icon.svg" alt="ig icon">
                     <img src="images/x-icon.svg" alt="x icon">
