@@ -223,7 +223,6 @@ button {
 #event-details {
   background-image: url(../images/event-detail-bg.jpg);
   background-size: cover;
-  background-position: top 90px;
   background-repeat: no-repeat;
   /*Basic margin size for each section*/
   margin: 5px auto;
@@ -272,10 +271,12 @@ button {
   margin: 10px 10px;
 }
 
+.event-section {
+  display:block;
+}
+
 .schedule {
   border: 2px solid #CE3B32;
-  /* padding-left: 15px;
-  padding-top: 10px; */
   padding: 10px 0 15px 15px;
   margin-bottom: 5px;
   background-color: white;
@@ -284,7 +285,7 @@ button {
 
 .schedule:hover {
   background-color: #CE3B32;
-  transform: scale(1.025);
+  transform: scale(1.125);
   color: white;
 }
 
@@ -533,12 +534,13 @@ input[type="range"]:focus::-moz-range-thumb{
 #photo-gallery {
   justify-content: center;
   align-self: center;
-  width: 420px;
+  /* width: 420px; */
   padding-top: 10px;
 }
 
 #photo-gallery img {
   padding-bottom: 10px;
+  width: 420;
 }
 
 #mobile-photos {
@@ -758,6 +760,10 @@ display: none;
 
 @media screen and (min-width: 768px) {
 
+h2, h3, h4, h5, h6 {
+  font-size: 25px;
+}
+
 
 /*header start*/
 
@@ -913,11 +919,100 @@ li a:hover {
 /*header end*/
 
 /*Event Details*/
+.event-section {
+  margin-top: 40px;
+}
+
+
+
 
 /*event Video*/
 .video-container {
-  padding-top: 15%;
+  padding-top: 30px;
 }
+
+/*Finalist*/
+
+.project-title {
+  font-size: 20px;
+}
+
+.finalist-details {
+  grid-row-start: 2;
+}
+
+#finalist .line-start {
+    width: 700px;
+    padding-bottom: 0px;
+}
+
+.finalist-details h4 {
+  color: #CE3B32;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+
+.finalist-details p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#gallery {
+  padding-top: 0px;
+}
+
+#photo-gallery {
+  display: grid;
+  margin-top: 30px;
+}
+
+.finalist-gallery {
+  margin-top: -30px;
+}
+
+#gallery-label {
+  display: block;
+}
+
+
+#tablet-gallery {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tablet-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 10px; /* Space between images */
+  width: 100%;
+}
+
+.tablet-but {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tablet-but span {
+  width: 10px;
+  height: 10px;  
+  border: 7px solid #CE3B32;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: inline-block;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* #tablet-images img {
+
+} */
+
 
 
 /*testimonials section*/
