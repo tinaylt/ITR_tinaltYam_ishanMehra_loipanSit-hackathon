@@ -8,13 +8,14 @@ const lines = document.querySelectorAll('.line');
 
 //Video player//
 const playerCon = document.querySelector('#player-container');
-const player = document.querySelector('video');
+const player = document.querySelector('#player-container video');
 const videoControls = document.querySelector('#video-controls');
 const playButton = document.querySelector('#play-button');
 const pauseButton = document.querySelector('#pause-button');
 const stopButton = document.querySelector('#stop-button');
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
+
 
 //Finalist Gallery//
 const finalists = [
@@ -330,6 +331,7 @@ function toggleMenu() {
 }
 
 //video player//
+// if JS is loaded then, remove default video controls and show custom controls
 player.controls = false;
 videoControls.classList.remove('hidden');
 
@@ -352,7 +354,9 @@ function changeVolume() {
     player.volume = volumeSlider.value;
 }
 
-
+// toggleFullScreen toggles the full screen state of the video
+// If the browser is currently in fullscreen mode,
+// then it should exit and vice versa.
 function toggleFullScreen() {
     if (document.fullscreenElement) {
       document.exitFullscreen();
@@ -367,18 +371,19 @@ function toggleFullScreen() {
     }
 }
 
+// hideControls hides the video controls when not in use
+// if the video is paused, the controls must remain visible
 function hideControls() {
     if (player.paused) {
       return;
     } 
-    videoControls.classList.add('pannel');
+    videoControls.classList.add('hide');
   }
   
   // showControls displays the video controls
   function showControls() {
-    videoControls.classList.remove('pannel');
+    videoControls.classList.remove('hide');
   }
-
 //Finalist Gallery//
 
 let currentIndex = 0;
