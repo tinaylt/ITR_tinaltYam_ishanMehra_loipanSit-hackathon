@@ -173,16 +173,14 @@ button {
 
 #hero #hero-header {
   grid-column: 2/3;
-  grid-row-start: 2;
-  margin: 0;
-}
-
-#hero-header {
-  display: block;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 60%;
   padding-left: 25px;
-  padding-bottom: 40px;
+  bottom: 0;
   position: relative;
 }
+
 
 #hero h3 {
   font-size: 60px;
@@ -797,6 +795,11 @@ h2, h3, h4, h5, h6 {
 
 /*header start*/
 
+#sticky-nav-con  {
+  justify-content: center;
+  align-self: center; 
+}
+
 #hero video{
   grid-column: 1/-1;
   grid-row-start: 1;
@@ -826,10 +829,14 @@ h2, h3, h4, h5, h6 {
   display: block;
   background-color: transparent;
   width: 90%;
+  height: 10px;
   max-width: 1200px;
+  margin: 15% auto;
+  z-index: 3;
+  top: 50%;
   position: relative;
-  margin: 27% auto;
 }
+
 
 .mobile-nav::before {
   content: '';
@@ -900,11 +907,9 @@ li a:hover {
   width: 250px;
 }
 
-
-#hero-header {
-  display: block;
-  padding-left: 50px;
-  padding-bottom: 12%;
+#hero #hero-header {
+  margin-top: 18%;
+  padding-left: 35px;
 }
 
 
@@ -949,6 +954,11 @@ li a:hover {
 
 
 /*event Video*/
+
+#event-details {
+  z-index: 5;
+}
+
 .video-container {
   padding-top: 70px;
 }
@@ -1218,29 +1228,19 @@ li a:hover {
   #sticky-nav-con {
     justify-content: center;
     align-items: center;
-
+    left: 4%;
   }
    
   .mobile-nav {
-    width: 90%;
-    justify-self: center;
-    align-self: center;
-    margin-top: 35%;
-    margin-left: 10%;
-  }
-
-  .mobile-nav ul li p {
-    font-size: 14px;
+    margin: 15% auto;
+    z-index: 3;
+    top: 60%;
+    position: relative;
   }
 
   #logo {
     width: 300px;
     padding-left: 30px;
-  }
-  
-  #hero-header {
-    padding-left: 50px;
-    padding-bottom: 20%;
   }
   
   
