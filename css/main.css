@@ -363,9 +363,9 @@ button {
   background-image: url(../images/title-label.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 300px;
-  margin-bottom: -20px;
-  padding: 10px 0;
+  background-size: 350px;
+  margin-bottom: -30px;
+  padding: 10px;
 
 }
 
@@ -474,9 +474,9 @@ input[type="range"]:focus::-moz-range-thumb{
   margin-bottom: 0;
 }
 
-.gallery {
+#gallery {
   display: flex;
-  max-width: 500px;
+  max-width: 400px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -693,18 +693,18 @@ display: none;
 }
 
 #dev-prev {
-  left: 0;
+  left: 8%;
 }
 
 #dev-next {
-  right: 0;
+  right: 8%;
 }
 
 /*Portfolio*/
 
 #portfolios {
   margin: 5px auto;
-  padding:30px 20px 0px 20px;
+  padding:60px 20px 0px 20px;
   margin-bottom: -20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
@@ -897,7 +897,6 @@ li a:hover {
 }
 
 
-
 #hero-header {
   display: block;
   padding-left: 50px;
@@ -918,10 +917,7 @@ li a:hover {
 }
 
 #hero-header p {
-  color: #CE3B32;
   font-size: 13px;
-  filter: drop-shadow(5px 5px 5px grey);
-  /* line-height: 5px; */
 }
 
 
@@ -975,8 +971,9 @@ li a:hover {
 }
 
 .finalist-details {
-  margin-top: 80px;
+  margin-top: 40%;
   grid-row-start: 2;
+  margin-left: 20%;
 }
 
 .finalist-gallery {
@@ -1002,6 +999,7 @@ li a:hover {
 
 #gallery {
   padding-top: 0px;
+  max-width: 600px;
 }
 
 #photo-gallery {
@@ -1010,7 +1008,8 @@ li a:hover {
 }
 
 .finalist-gallery {
-  margin-top: -30px;
+  margin-top: -20px;
+  padding-top: 0px;
 }
 
 #gallery img {
@@ -1019,6 +1018,10 @@ li a:hover {
 
 #gallery-label {
   display: block;
+}
+
+#photo-gallery {
+  margin-top: 60px;
 }
 
 #next {
@@ -1072,6 +1075,16 @@ li a:hover {
 
 /*testimonials section*/
 
+#testimonial div h3 {
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+
+#testimonial div p {
+  line-height: 20px;
+  font-size: 15px;
+}
+
 
 /*IDP program section*/
 
@@ -1080,10 +1093,15 @@ li a:hover {
   padding-bottom: 70px;
 }
 
+.program-des {
+  grid-row-start: 2;
+}
 
 .program-img {
-  grid-row: 2;
+  /* grid-row: 2; */
   padding-left: 20px;
+  display: flex;
+  margin-top: -100px;
 }
 
 .program-des p {
@@ -1093,20 +1111,36 @@ li a:hover {
 
 /*Developers section*/
 
-.dev-details {
+
+.dev-text {
   grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .dev-text {
   margin-top: 90px;
-  margin-bottom: 30px;
-  width: 400px;
+  margin-bottom: 10px;
+  width: 500px;
+  padding: 0 5px;
 }
 
 .dev-text p {
   line-height: 30px;
 }
+
+.dev-details .title-label { 
+  background-size: 300px;
+  margin-left: 0px;
+  padding: 10px 0;
+} 
+
+#dev-prev {
+  left: -10%;
+}
+
+#dev-next {
+  right: -10%;
+}
+
 
 /*Portfolios*/
 
@@ -1155,16 +1189,217 @@ li a:hover {
 
 @media screen and (min-width: 1200px) {
 
-  /*header start*/
-   
-  .hamburger{
-    display: none;
+  h2, h3, h4, h5, h6 {
+    font-size: 30px;
   }
 
-  
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
 
+  .line-start {
+    width: 600px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+
+  /*header start*/
+
+  #hero {
+    height: 700px;
+  }
+
+  #sticky-nav-con {
+    justify-content: center;
+    align-items: center;
+
+  }
+   
+  .mobile-nav {
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 35%;
+    margin-left: 15%;
+  }
+
+  #logo {
+    width: 300px;
+    padding-left: 30px;
+  }
+  
+  #hero-header {
+    padding-left: 50px;
+    padding-bottom: 25%;
+  }
+  
+  
+  .heading-left {
+    top: 3%;
+    padding-bottom: 160px;
+  }
+  
+  
+  #hero h3 {
+    font-size: 65px;
+    line-height: 70px;
+    padding-left: 20px;
+  }
+
+  #hero-header p {
+    font-size: 15px;
+  }
 
   /*header end*/
+
+  /*Event Details*/
+.event-section {
+  margin-top: 30px;
+}
+
+/*event Video*/
+.video-container {
+  padding-top: 0px;
+  margin-top: -10px;
+}
+
+.date p {
+  margin-top: 15px;
+}
+
+/*Finalist*/
+
+
+
+.project-title {
+  font-size: 25px;
+  
+}
+
+#finalist {
+  padding-bottom: 80px;
+}
+
+
+
+#finalist-gallery {
+  padding-top: 0;
+  margin-top: -100px;
+}
+
+.finalist-details {
+  margin-top: 40%;
+}
+
+#gallery {
+  width: 100%;
+}
+
+#finalist .line-start {
+    width: 600px;
+}
+
+.finalist-details {
+  margin-left: 5%;
+}
+
+.finalist-details h4 {
+  color: #CE3B32;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+
+.finalist-details p {
+  line-height: 55px;
+  font-size: 26px;
+}
+
+.finalist-nav .fa-solid {
+  font-size: 40px;
+}
+
+#next {
+  right: 5%;
+}
+
+#prev {
+  left: 5%;
+}
+
+/*Tablet Gallery*/
+
+#tablet-gallery img {
+  width: 500px;
+}
+
+#tablet-photos li button {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+#t-gallery-but-left {
+  left: 48%;
+}
+
+#t-gallery-but-right {
+  right: 48%;
+}
+
+
+/*Developers section*/
+
+.dev-text {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  width: 700px;
+  padding: 0 5px;
+}
+
+.dev-text p {
+  line-height: 30px;
+}
+
+.dev-details .title-label { 
+  background-size: 300px;
+  margin-left: 0px;
+  padding: 10px 0;
+} 
+
+#dev-but .fa-solid {
+  font-size: 40px;
+}
+
+#dev-prev {
+  left: 0%;
+}
+
+#dev-next {
+  right: 0%;
+}
+
+/*Portfolios*/
+
+
+.student-box {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 90px;
+  padding: 0;
+}
+
+.student-box h4 {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.student-box p {
+  padding-top: 10px;
+  font-size: 15px;
+}
 
 
 
