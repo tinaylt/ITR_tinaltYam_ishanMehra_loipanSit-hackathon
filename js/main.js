@@ -246,11 +246,6 @@ const students = [
   },
 
   {
-    lastName: "Yam",
-    firstName: "LokTingTina"
-  },
-
-  {
     lastName: "Nguyen",
     firstName: "Thi-Thanh-Thuong"
   },
@@ -329,6 +324,12 @@ const students = [
     lastName: "Harnoorpreet",
     firstName: "Kaur"
   },
+
+  {
+    lastName: "Juntarattanakamol",
+    firstName: "Apapat"
+  },
+
 ]
 const studentBoxes = document.querySelectorAll('.student-box');
 
