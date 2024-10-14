@@ -831,7 +831,7 @@ h2, h3, h4, h5, h6 {
   width: 90%;
   height: 10px;
   max-width: 1200px;
-  margin: 15% auto;
+  margin: 13% auto;
   z-index: 3;
   top: 50%;
   position: relative;
@@ -1228,7 +1228,7 @@ li a:hover {
   #sticky-nav-con {
     justify-content: center;
     align-items: center;
-    left: 4%;
+    left: 5%;
   }
    
   .mobile-nav {
@@ -1242,7 +1242,7 @@ li a:hover {
     width: 300px;
     padding-left: 30px;
   }
-  
+
   
   .heading-left {
     top: 3%;
@@ -1260,9 +1260,6 @@ li a:hover {
     font-size: 15px;
   }
 
-  #hero #hero-header {
-    grid-column: 1/3;
-  }
 
   #testi, #deve, #port {
     margin-left: -30px;
