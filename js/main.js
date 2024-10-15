@@ -22,28 +22,28 @@ const finalists = [
   {
     label: "FINALIST - 1",
     winner: "images/place-holder1.png",
-    webDeveloper: "Ishan",
-    graphicDesigner: "Roy",
-    videoDesigner: "Tina",
-    motionDesigner: "Joe"
+    webDeveloper: "Jasmine Chicoine",
+    graphicDesigner: "Deviano Dames",
+    videoDesigner: "Spencer Abbot",
+    motionDesigner: "Shih-Hsuan Huang"
   },
 
   {
     label: "FINALIST - 2",
     winner: "images/place-holder2.png",
-    webDeveloper: "Mary",
-    graphicDesigner: "Tom",
-    videoDesigner: "June",
-    motionDesigner: "Mark"
+    webDeveloper: "Patricia Martins",
+    graphicDesigner: "Loui Hernandez",
+    videoDesigner: "Valentina Perez",
+    motionDesigner: "Sumin Lee"
   },
 
   {
     label: "FINALIST - 3",
     winner: "images/place-holder3.png",
-    webDeveloper: "Charile",
-    graphicDesigner: "Peter",
-    videoDesigner: "Chris",
-    motionDesigner: "Anna"
+    webDeveloper: "Delilah Singer",
+    graphicDesigner: "Sophia Westrop",
+    videoDesigner: "Suyog Ghimire",
+    motionDesigner: "Bryan Hortua"
   },
 ];
 
@@ -70,7 +70,7 @@ const developers = [
   {
    devName: "Roy",
    devImage: "images/dev1.png",
-   description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored. &nbsp; Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+   description: "With a solid educational foundation in fashion and graphic design in the UK, and several years of experience working with international brands, I have honed my expertise in creating innovative and market-leading designs. Currently expanding my skill set by studying Interactive Media Design to blend fashion and technology with a unique specialisation in website design, and motion graphic for fashion brands."
   },
 
   {
@@ -82,7 +82,7 @@ const developers = [
    {
     devName: "Ishan",
     devImage: "images/dev2.png",
-    description: "Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers. Ensure the sacrifices of these soldiers are remembered and honored. &nbsp; Inspire future generations with the values of humanity and freedom through the commemoration of this shared history."
+    description: "I am an Interactive Media Design student passionate about creativity and technology. With skills in motion graphics, Coding, video editing, and graphic design, I aspire to become a Web developer.<br><br>As someone who is a little introverted, I appreciate meaningful connections and enjoy reading, exploring nature, and engaging with new people at my own pace. I believe in the power of empathy, respect, and care, which I bring to my work and relationships. With big dreams ahead, I'm excited about my journey of personal and professional growth, and I look forward to making an impact in the creative world!"
    },
 ];
 
