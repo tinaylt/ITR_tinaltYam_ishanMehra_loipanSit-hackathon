@@ -1260,19 +1260,19 @@ li a:hover {
 
   
   .heading-left {
-    top: 4%;
-    padding-bottom: 170px;
+    top: 5%;
+    padding-bottom: 210px;
   }
   
   
   #hero h3 {
-    font-size: 65px;
-    line-height: 70px;
+    font-size: 75px;
+    line-height: 80px;
     padding-left: 20px;
   }
 
   #hero-header p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
 
