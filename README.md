@@ -1,4 +1,3 @@
-![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/anit/Desktop/ITR_tinaltYam_ishanMehra_loipanSit-hackathon/images/video-poster.png?version%3D1729102328007)
 
 # Fanshawe Industry Night 2025
 ***
