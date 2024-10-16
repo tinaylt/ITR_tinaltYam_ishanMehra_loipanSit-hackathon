@@ -1084,20 +1084,35 @@ li a:hover {
 #tablet-photos li button {
   width: 15px;
   height: 15px;
-  background-color: #CE3B32;
+  background-color: white;
+  border: 2px solid #CE3B32;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
   margin-top: 10px;
-  margin-left: 60px;
+}
+
+
+#gallery-label p {
+  padding: 15px 0;
+  font-size: 20px;
+  margin-bottom: -15px;
+}
+
+
+
+
+
+#tablet-photos li button:hover {
+  background-color: #CE3B32;
 }
 
 #t-gallery-but-left {
-  left: 48%;
+  left: 47%;
 }
 
 #t-gallery-but-right {
-  right: 48%;
+  right: 47%;
 }
 
 
@@ -1365,18 +1380,17 @@ li a:hover {
 }
 
 #tablet-photos li button {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-top: 15px;
-  margin-right: 5px;
 }
 
 #t-gallery-but-left {
-  left: 46%;
+  left: 48%;
 }
 
 #t-gallery-but-right {
-  right: 46%;
+  right: 48%;
 }
 
 /*Developers section*/
