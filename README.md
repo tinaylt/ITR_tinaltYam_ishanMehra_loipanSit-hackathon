@@ -1,12 +1,12 @@
 # Fanshawe Industry Night 2025
 
 ### Background
-This is a Hackathon project for seminster 3 IDP programe. Our team required to create a web page to promote the upcoming event for Level 4 students to showcase their works for potential clients. The Industry Night also features the Brothers In Arm Memorial project and personal profolio of each student. 
+This is a Hackathon project for the Semester 3 IDP program. Our team is required to create a web page to promote the upcoming event for Level 4 students to showcase their work to potential clients. The Industry Night also features the Brothers In Arms Memorial project and the personal portfolio of each student. 
 
 The repo is for demonstrating how to set up the project with branching. 
 
 ### Installation
-This project using VS code, JaveScripe, PHP and SASS. Please make sure you installed all of them before downloading the file. 
+This project uses VS code, JaveScripe, PHP and SASS. Please make sure you installed all of them before downloading the file. 
 
 ### Usage 
 Open the index.html in your browser of choice. 
