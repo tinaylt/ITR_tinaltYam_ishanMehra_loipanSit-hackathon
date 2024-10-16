@@ -82,20 +82,17 @@ button {
   position: absolute;
   flex-direction: column;
   background-color: rgba(216, 58, 58, 1);
-  left: -10px;
   z-index: 2;
   justify-content: center;
   align-self: center;
+  padding-bottom: 40px;
+  width: 490px; 
+  margin-left: -15px;
+  top: 0%;
 }
 
 .hide {
   display: none;
-}
-
-.mobile-nav {
-  width: 500px;
-  height: 400px;
-  padding-top: 50px;
 }
 
 .mobile-nav ul li{
@@ -116,15 +113,16 @@ button {
 
 #white-logo {
   width: 280px;
+  height: 100px;
   padding-bottom: 10px;
-  margin-top: -20px;
+  margin-top: 40px;
 }
 
 #white-logo img {
   width: 250px;
 }
 
-  #social-media {
+#social-media {
   float: right;
   width: 180px;
 }
@@ -178,15 +176,15 @@ button {
   grid-row-start: 1;
   grid-row-end: 3;
   margin-top: 60%;
-  padding-left: 25px;
+  padding-left: 30px;
   bottom: 0;
   position: relative;
 }
 
 
 #hero h3 {
-  font-size: 60px;
-  line-height: 55px;
+  font-size: 70px;
+  line-height: 75px;
   color: white;
   padding-left: 10px;
   filter: drop-shadow(5px 5px 5px grey);
@@ -194,36 +192,17 @@ button {
 
 #hero p {
   color: #CE3B32;
-  font-size: 13px;
-  filter: drop-shadow(5px 5px 5px grey);
+  font-size: 16px;
+  filter: drop-shadow(5px 5px 5px darkgrey);
+  font-weight: 600;
   /* line-height: 5px; */
 }
 
 .heading-left {
   transform: rotate(270deg);
   position: absolute;
-  padding-bottom: 150px;
-  top: 2%;
-}
-
-#register-but {
-  padding-top: 20px;
-}
-
-#register-but button {
-  background-image: url(../images/button.svg);
-  background-repeat: no-repeat;
-  background-size:inherit;
-  width: 150px;
-  height: 30px;
-  color: white;
-  filter: drop-shadow(3px 3px 5px rgb(41, 41, 41));
-}
-
-
-
-#register-but button:hover {
-  transform: scale(1.10);
+  padding-bottom: 200px;
+  top: 3%;
 }
 
 /*header end*/
@@ -235,9 +214,10 @@ button {
   background-image: url(../images/event-detail-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   /*Basic margin size for each section*/
   margin: 5px auto;
-  padding:60px 20px;
+  padding:90px 20px;
 }
 
 .description {
@@ -245,13 +225,13 @@ button {
 }
 
 .where-when {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .line-start {
   width: 400px;
   justify-content: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #where-icon {
@@ -296,8 +276,13 @@ button {
 
 .schedule:hover {
   background-color: #CE3B32;
-  transform: scale(1.125);
+  transform: scale(1.045);
   color: white;
+
+  .icon-s {
+    color: white;
+    transform: scale(1.125);
+  }
 }
 
 .location-s {
@@ -324,7 +309,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 5px auto;
-  padding:60px 20px;
+  padding:90px 20px;
 }
 
 
@@ -346,6 +331,11 @@ button {
 
 .video-controls.hidden {
   display: none;
+}
+
+.video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .video-controls {
@@ -469,7 +459,7 @@ input[type="range"]:focus::-moz-range-thumb{
 
 #finalist {
   margin-top: 5px;
-  padding: 60px 20px;
+  padding: 90px 20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
 }
@@ -479,6 +469,7 @@ input[type="range"]:focus::-moz-range-thumb{
   padding-bottom: 10px;
   margin-bottom: 20px;
   padding-left: 10px;
+  font-size: 17px;
 }
 
 #finalist-label {
@@ -542,9 +533,15 @@ input[type="range"]:focus::-moz-range-thumb{
 
 /*Photo Gallery*/
 
-#gallery-label {
-  /* padding-bottom: 10px; */
-  margin-bottom: 0;
+#gallery-label p {
+  background-image: url('../images/title-label.svg');
+  background-repeat: no-repeat;
+  padding: 5px 0;
+  text-align: center;
+  background-position: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #photo-gallery {
@@ -591,20 +588,25 @@ input[type="range"]:focus::-moz-range-thumb{
 #testimonial {
   position: relative;
   margin: 5px auto;
-  padding:60px 20px;
+  padding:90px 20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
 }
 
-#testimonial div p {
+.testimonial-box p {
   font-size: 15px;
   padding: 10px 10px;
 }
 
-#testimonial div h3 {
+.testimonial-box h3 {
   font-size: 20px;
   padding: 10px 10px;
 }
+
+.test-block:hover {
+  transform: scale(1.025);
+}
+
 
 .desk-size {
 display: none;
@@ -614,7 +616,7 @@ display: none;
 
 #program {
   margin: 5px auto;
-  padding:60px 20px;
+  padding:90px 20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
 }
@@ -666,7 +668,7 @@ display: none;
 
 #developer {
   margin: 5px auto;
-  padding:30px 20px;
+  padding:90px 20px;
   background-color: #CBC8C8;
   background-image: linear-gradient(0deg, #CBC8C8, #fffcfc);
 }
@@ -686,6 +688,7 @@ display: none;
   margin: 0 auto;
   max-width: 600px;
   overflow: hidden;
+  height: 400px;
 }
 
 #dev-gallery img {
@@ -711,6 +714,10 @@ display: none;
   right: 8%;
 }
 
+.dev-text {
+  padding-top: 20px;
+}
+
 /*Portfolio*/
 
 #portfolios {
@@ -726,7 +733,7 @@ display: none;
   margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 70px;
+  height: 80px;
   text-align: center;
   cursor: pointer;
 }
@@ -833,7 +840,7 @@ h2, h3, h4, h5, h6 {
   width: 90%;
   height: 10px;
   max-width: 1200px;
-  margin: 13% auto;
+  margin: 14% auto;
   z-index: 3;
   top: 50%;
   position: relative;
@@ -910,25 +917,25 @@ li a:hover {
 }
 
 #hero #hero-header {
-  margin-top: 18%;
+  margin-top: 15%;
   padding-left: 35px;
 }
 
 
 .heading-left {
-  top: 2%;
-  padding-bottom: 110px;
+  top: 4%;
+  padding-bottom: 160px;
 }
 
 
 #hero h3 {
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 50px;
+  line-height: 60px;
   padding-left: 8px;
 }
 
 #hero-header p {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 
@@ -943,6 +950,7 @@ li a:hover {
   margin: 20px auto;
 }
 /*header end*/
+
 
 /*Event Details*/
 .event-section {
@@ -962,7 +970,7 @@ li a:hover {
 }
 
 .video-container {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .date p {
@@ -987,9 +995,9 @@ li a:hover {
 }
 
 .finalist-details {
-  margin-top: 40%;
+  margin-top: 20%;
   grid-row-start: 2;
-  margin-left: 20%;
+  margin-left: 0%;
 }
 
 .finalist-gallery {
@@ -1003,14 +1011,14 @@ li a:hover {
 
 .finalist-details h4 {
   color: #CE3B32;
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 30px;
 }
 
 
 .finalist-details p {
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 30px;
+  font-size: 16px;
 }
 
 #gallery {
@@ -1038,10 +1046,11 @@ li a:hover {
 
 #photo-gallery {
   margin-top: 60px;
+  margin-bottom: 90px;
 }
 
 #next {
-  right: -20px;
+  right: -28px;
 }
 
 #prev {
@@ -1063,7 +1072,9 @@ li a:hover {
 #tablet-gallery img {
   padding-right: 10px;
   width: 300px;
-  /* height: 190px; */
+  height: 200px;
+  overflow: hidden;
+  object-fit:cover;
 }
 
 #tablet-gallery img:hover {
@@ -1078,6 +1089,7 @@ li a:hover {
   border-radius: 50%;
   position: absolute;
   margin-top: 10px;
+  margin-left: 60px;
 }
 
 #t-gallery-but-left {
@@ -1087,6 +1099,7 @@ li a:hover {
 #t-gallery-but-right {
   right: 48%;
 }
+
 
 
 /*testimonials section*/
@@ -1103,11 +1116,6 @@ li a:hover {
 
 
 /*IDP program section*/
-
-#program {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
 
 .program-des {
   grid-row-start: 2;
@@ -1140,14 +1148,19 @@ li a:hover {
 }
 
 .dev-text p {
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .dev-details .title-label { 
-  background-size: 300px;
+  background-size: 250px;
   margin-left: 0px;
   padding: 10px 0;
 } 
+
+
+.dev-details {
+  margin-top: 40px;
+}
 
 #dev-prev {
   left: -10%;
@@ -1164,7 +1177,7 @@ li a:hover {
 .student-box {
   margin-left: 10px;
   margin-right: 10px;
-  height: 80px;
+  height: 90px;
   padding: 0;
 }
 
@@ -1247,8 +1260,8 @@ li a:hover {
 
   
   .heading-left {
-    top: 3%;
-    padding-bottom: 160px;
+    top: 4%;
+    padding-bottom: 170px;
   }
   
   
@@ -1264,7 +1277,7 @@ li a:hover {
 
 
   #testi, #deve, #port {
-    margin-left: -30px;
+    margin-left: -20px;
   }
 
   /*header end*/
@@ -1299,13 +1312,14 @@ li a:hover {
 
 
 
-#finalist-gallery {
+.finalist-gallery {
   padding-top: 0;
-  margin-top: -100px;
+  margin-top: -70px;
+  margin-left: 15%;
 }
 
 .finalist-details {
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
 #gallery {
@@ -1317,19 +1331,19 @@ li a:hover {
 }
 
 .finalist-details {
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .finalist-details h4 {
   color: #CE3B32;
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 30px;
 }
 
 
 .finalist-details p {
-  line-height: 55px;
-  font-size: 26px;
+  line-height: 45px;
+  font-size: 20px;
 }
 
 .finalist-nav .fa-solid {
@@ -1337,11 +1351,11 @@ li a:hover {
 }
 
 #next {
-  right: 5%;
+  right: 3%;
 }
 
 #prev {
-  left: 5%;
+  left: 3%;
 }
 
 /*Tablet Gallery*/
@@ -1354,16 +1368,16 @@ li a:hover {
   width: 20px;
   height: 20px;
   margin-top: 15px;
+  margin-right: 5px;
 }
 
 #t-gallery-but-left {
-  left: 48%;
+  left: 46%;
 }
 
 #t-gallery-but-right {
-  right: 48%;
+  right: 46%;
 }
-
 
 /*Developers section*/
 
@@ -1375,7 +1389,7 @@ li a:hover {
 }
 
 .dev-text p {
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .dev-details .title-label { 

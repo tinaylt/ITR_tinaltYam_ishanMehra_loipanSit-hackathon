@@ -1,6 +1,6 @@
 (() => {
 
-//mobile menu//
+//Mobile Menu//
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
 const lines = document.querySelectorAll('.line');
@@ -85,6 +85,37 @@ const developers = [
     description: "I am an Interactive Media Design student passionate about creativity and technology. With skills in motion graphics, Coding, video editing, and graphic design, I aspire to become a Web developer.<br><br>As someone who is a little introverted, I appreciate meaningful connections and enjoy reading, exploring nature, and engaging with new people at my own pace. I believe in the power of empathy, respect, and care, which I bring to my work and relationships. With big dreams ahead, I'm excited about my journey of personal and professional growth, and I look forward to making an impact in the creative world!"
    },
 ];
+
+//Testimonial// 
+const clients = [
+  {
+    fName: "Aimee",
+    lName: "Hagerty",
+    comment: "These amazing students bring fresh perspectives and innovative ideas to the table. Their dedication to the project is truly inspiring."
+  },
+
+  {
+    fName: "Bill",
+    lName: "Hagerty",
+    comment: "It's been incredible to work alongside these talented students. Their passion and dedication reaffirm our commitment to supporting youth mental health."
+  },
+
+  {
+    fName: "Marco",
+    lName: "De Luca",
+    comment: "Observing the students collaborating with Foundation Sixty6 has been an inspiring journey. The creativity and skill displayed by the students have been truly outstanding."
+  },
+
+  {
+    fName: "Mary",
+    lName: "Portman",
+    comment: "Happy to work with creative and inspiraing students during the project. Learn a lot and having lots of fun!"
+  },
+
+]
+
+const testimonialBlocks = document.querySelectorAll('.testimonial-box');
+
 
 
 //Portfolio//
@@ -330,6 +361,120 @@ const students = [
     firstName: "Apapat"
   },
 
+  {
+    lastName: "Bandarra",
+    firstName: "Sydney"
+  },
+
+  {
+    lastName: "Ogbeide",
+    firstName: "Osarieme"
+  },
+
+  {
+    lastName: "Huertas",
+    firstName: "Tanya-Mae"
+  },
+
+  {
+    lastName: "Cano-Menendez",
+    firstName: "Tanya-Mae"
+  },
+
+  {
+    lastName: "Bishokarma",
+    firstName: "Kamana"
+  },
+
+  {
+    lastName: "Sham",
+    firstName: "King-Yin"
+  },
+
+  {
+    lastName: "Benipal",
+    firstName: "Tapshveer"
+  },
+
+  {
+    lastName: "Laput",
+    firstName: "Dixie-Marie"
+  },
+
+  {
+    lastName: "Faizan-Khan",
+    firstName: ""
+  },
+
+  {
+    lastName: "Lie",
+    firstName: "Keith"
+  },
+
+  {
+    lastName: "Gamborgi-Menezes",
+    firstName: "Henrique"
+  },
+
+  {
+    lastName: "Mahaittidon",
+    firstName: "Natchanon"
+  },
+
+  {
+    lastName: "Chan",
+    firstName: "Wing-Lam-Stephanie"
+  },
+
+  {
+    lastName: "Lai",
+    firstName: "Yi-Ting"
+  },
+
+  {
+    lastName: "Gohetia",
+    firstName: "Sheldon"
+  },
+
+  {
+    lastName: "Gregory",
+    firstName: "Joyal"
+  },
+
+  {
+    lastName: "Sidhu",
+    firstName: "Sukhbhag-Singh"
+  },
+
+  {
+    lastName: "Shah",
+    firstName: "Het"
+  },
+
+  {
+    lastName: "Patel",
+    firstName: "Lav-Pareshkumar"
+  },
+
+  {
+    lastName: "Dasilva",
+    firstName: "Simon"
+  },
+
+  {
+    lastName: "",
+    firstName: "Wimarsha-Heshan-Jayasinghe"
+  },
+
+  {
+    lastName: "Ho",
+    firstName: "Gia-Khang"
+  },
+
+  {
+    lastName: "Bendzsel",
+    firstName: "Kristina"
+  },
 ]
 const studentBoxes = document.querySelectorAll('.student-box');
 
@@ -414,18 +559,25 @@ function updateDevGallery() {
   document.getElementById("dev-slide").src = currentDeveloper.devImage;
   document.getElementById("dev-label").innerHTML = `<p>${currentDeveloper.devName}</p>`;
   document.getElementById("dev-desciption").innerHTML = `${currentDeveloper.description}`;
-}
+};
+
+//Testimonials//
+
+testimonialBlocks.forEach(block => {
+  const testimonialSection = block.dataset.review;
+  const testimonial = clients[testimonialSection];
+
+  block.innerHTML = `
+  <h3>${testimonial.fName} ${testimonial.lName}</h3>
+  <p>${testimonial.comment}</p>`;
+});
 
 //Portfolio//
 
 studentBoxes.forEach(box => {
-  // Get the student index from the data-student attribute
   const studentIndex = box.dataset.student;
-
-  // Access the corresponding student from the students array
   const student = students[studentIndex];
 
-  // Populate the student-box with the student's name and email
   box.innerHTML = `
     <h4>${student.firstName} ${student.lastName}</h4>
     <p>${student.firstName}.ca</p>`;
