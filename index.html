@@ -20,7 +20,7 @@
                         <span class="line"></span>
                     </div>
                         
-                        <nav class="mobile-nav hide m-col-span-full l-col-span-full xl-col-span-full">
+                        <nav class="mobile-nav hide col-span-full l-col-span-full xl-col-span-full">
                             <h2 class="hidden">Main Navigation</h2>
 
                                 <ul>
@@ -59,11 +59,6 @@
                             <h3>INDUSTRY<br>NIGHT<br>2025</h3>
                             <p>School of Media & Digtial Arts</p>
                             <p class="heading-left">Interactive Media Design</p>
-
-                        <div id="register-but">
-                            <button>Register</button>
-                        </div>
-
                         </div>
                     </div>
 
@@ -163,8 +158,8 @@
                             </div>
 
                         <div id="player-container">
-                        <video controls preload="metadata">
-                            <source src="video/industry-night-draft.mp4" type="video/mp4">
+                        <video controls preload="metadata" poster="images/video-poster.png">
+                            <source src="video/hackathon-promo2.mp4" type="video/mp4">
                         </video>
 
                         <div class="video-controls hidden" id="video-controls">
@@ -226,7 +221,7 @@
                     <section id="photo-gallery" class="col-span-full m-col-span-full l-col-span-full xl-col-span-full">
                         <h2 class="hidden">photo gallery</h2>
 
-                        <div class="title-label mobile-size" id="gallery-label"><p>GALLERIES</p></div>
+                        <div class="mobile-size" id="gallery-label"><p>GALLERIES</p>
                         <div id="mobile-gallery" class="mobile-size">
                             <img id="mob-img1" src="images/mobile-gallery1.jpg" alt="industry night photo">
                             <img id="mob-img2" src="images/mobile-gallery2.jpg" alt="industry night photo">
@@ -253,6 +248,8 @@
                             <img id="tablet-img4" src="images/tablet-gallery4.jpg" alt="industry night photo">
                             <img id="tablet-img5" src="images/tablet-gallery5.jpg" alt="industry night photo">
                             <img id="tablet-img6" src="images/tablet-gallery6.jpg" alt="industry night photo">
+                        </div>
+
                             <nav>
                                 <ul id="tablet-photos">
                                     <li data-tablet-gallery1="images/tablet-gallery1.jpg"
@@ -275,6 +272,7 @@
 
                                 </ul>
                             </nav>
+
                         </div>
 
 
@@ -288,58 +286,34 @@
                 <div class="grid-con">
                     <h2 class="col-span-full">TESTIMONIALS</h2>
                     
-                    <div class="col-span-full m-col-start-1 m-col-end-7">
+                    <div class="col-span-full m-col-start-1 m-col-end-7 test-block">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
-                        
-                        <h3>Aimee Hagerty</h3>
-                        <p>
-                            "These amazing students bring fresh perspectives and innovative ideas to the table. Their dedication to the project is truly inspiring,"</p>
-
+                        <div data-review="0" class="testimonial-box"></div>
                         <div class="line-end"></div>
                     </div>
 
-                    
-                    <div class="col-span-full m-col-start-7 m-col-end-13">
+                    <div class="col-span-full m-col-start-7 m-col-end-13 test-block">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
-                        
-                        <h3>Bill Hagerty</h3>
-                        <p>"It's been incredible to work alongside these talented students. Their passion and dedication reaffirm our commitment to supporting youth mental health."</p>
-
+                        <div data-review="1" class="testimonial-box"></div>
                         <div class="line-end"></div>
                     </div>
 
-
-                    <div class="col-span-full m-col-start-1 m-col-end-7">
+                    <div class="col-span-full m-col-start-1 m-col-end-7 test-block">
                         <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
-
-                        <h3>Marco De Luca</h3>
-                        <p>"Observing the students collaborating with Foundation Sixty6 has been an inspiring journey. The creativity and skill displayed by the students have been truly outstanding."</p>
-
+                        <div data-review="2" class="testimonial-box"></div>
                         <div class="line-end"></div>
                     </div>
 
+                    <div class="col-span-full m-col-start-7 m-col-end-13 test-block">
+                        <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
+                        <div data-review="3" class="testimonial-box"></div>
+                        <div class="line-end"></div>
+                    </div>
 
                     <!-- <div class="m-col-start-6 m-col-end-8 desk-size test-heading">
                         <h3>TESTIMONIALS</h3>
                     </div> -->
 
-                    <div class="col-span-full m-col-start-7 m-col-end-13 desk-size">
-                        <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
-
-                        <h3>Aimee Hagerty</h3>
-                        <p> "These amazing students bring fresh perspectives and innovative ideas to the table. Their dedication to the project is truly inspiring,"</p>
-
-                        <div class="line-end"></div>
-                    </div>
-
-                    <!-- <div class="col-span-full m-col-start-4 m-col-end-11 desk-size">
-                        <object data="images/thurder-line.svg" type="image/svg+xml" class="line-start"></object>
-
-                        <h3>Ishan</h3>
-                        <p>Raise awareness and donations for the construction and installation of a stone memorial depicting scenes from joint battles fought by Indian and Canadian soldiers.<br>Ensure the sacrifices of these soldiers are remembered and honored.<br><br>Inspire future generations with the values of humanity and freedom through the commemoration of this shared history.</p>
-
-                        <div class="line-end"></div>
-                    </div> -->
                 </div>
             </section>
 
@@ -415,153 +389,81 @@
                 <div class="grid-con">
                 <h2 class="col-span-full mobile-heading">PORTFOLIO</h2>
                 
-                <div data-student="0" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="1" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="2" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="3" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="4" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="5" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="6" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="7" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="8" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="9" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="10" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="11" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-                
-                <div data-student="12" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="13" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="14" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="15" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="16" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="17" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="18" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="19" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="20" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="21" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="22" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="23" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="24" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="25" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="26" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="27" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="28" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="29" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="30" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="31" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="32" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="33" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="34" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="35" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="36" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="37" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="38" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="39" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="40" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="41" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="42" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="43" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
-
-                <div data-student="44" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4">
-                </div>
-
-                <div data-student="45" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7">
-                </div>
-
-                <div data-student="46" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10">
-                </div>
-
-                <div data-student="47" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13">
-                </div>
+                <div data-student="0" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="1" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="2" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="3" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="4" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="5" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="6" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="7" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="8" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="9" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="10" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="11" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="12" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="13" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="14" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="15" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="16" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="17" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="18" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="19" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="20" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="21" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="22" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="23" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="24" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="25" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="26" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="27" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="28" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="29" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="30" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="31" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="32" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="33" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="34" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="35" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="36" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="37" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="38" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="39" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="40" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="41" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="42" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="43" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="44" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="45" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="46" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="47" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="48" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="49" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="50" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="51" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="52" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="53" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="54" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="55" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="56" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="57" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="58" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="59" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="60" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="61" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="62" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="63" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="64" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="65" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="66" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
+                <div data-student="67" class="student-box col-start-3 col-end-5 m-col-start-10 m-col-end-13"></div>
+                <div data-student="68" class="student-box col-start-1 col-end-3 m-col-start-1 m-col-end-4"></div>
+                <div data-student="69" class="student-box col-start-3 col-end-5 m-col-start-4 m-col-end-7"></div>
+                <div data-student="70" class="student-box col-start-1 col-end-3 m-col-start-7 m-col-end-10"></div>
                 
                 </div>
 
-                </div>
+
             </section>
 
 
