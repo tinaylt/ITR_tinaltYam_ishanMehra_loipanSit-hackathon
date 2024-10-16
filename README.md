@@ -1,6 +1,5 @@
 
 # Fanshawe Industry Night 2025
-***
 
 ### Background
 This is a Hackathon project for the Semester 3 IDP program. Our team is required to create a web page to promote the upcoming event for Level 4 students to showcase their work to potential clients. The Industry Night also features the Brothers In Arms Memorial project and the personal portfolio of each student. 
